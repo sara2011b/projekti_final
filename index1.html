@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missini Sweets</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css/">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merriweather', serif;
+        }
+        .all-content{
+            background: #e2d2bd ;
+        }
+        html ::-webkit-scrollbar-track{
+            background: transparent;
+        }
+        html ::-webkit-scrollbar-thumb{
+            background: #b2744c;
+            border-radius: 10px;
+        }
+        html ::-webkit-scrollbar{
+            width: 10px;
+        }
+        #navbar{
+            background-color: #b2744c;
+
+        }
+        #logo img{
+            width: 160px;
+            margin-left: 40px;
+        }
+        .navbar-nav{
+            margin-left: 50px;
+        }
+        .nav-item .nav-link{
+            color: black;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: 0.5s;
+    
+        } 
+        .nav-item .nav-link:hover{
+            background: #f7f5f2;
+            border-radius:5px;
+            color: black;
+        }
+        #navbar form button{
+            background: black;
+            color: white;
+            border: 1px solid white;
+        }
+        #home{
+            width:100%;
+            height: 90vh;
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(image/coffee.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 88%;
+        }
+        #home .content{
+            padding-top: 210px;
+            margin-left: 56px;
+        }
+        #home .content h3{
+            font-size: 50px;
+            color: white;
+        }
+        @media screen and (max-width:982px){
+            #about p{
+                font-size:8px;
+            }
+        }
+        @media screen and (max-width:766px){
+            #about p{
+                font-size:8px;
+            }
+        }
+        #gallary .card{
+            border-radius:10px;
+            cursor: pointer;
+        }
+        
+        #gallary .card img{
+            border-radius:10px;
+        }
+        #contact{
+            width: 100%;
+            height: 108vh; 
+            padding-top: 70px;
+        }
+        #contact .container{ 
+            width: 100%; 
+            height: 80vh;
+            background: linear-gradient (90deg, white 80%, #b2744c 20%);
+            border-radius: 10px;
+        }
+        .heading6{
+            font-size: 30px; 
+            font-weight: bold; 
+            margin-top: 70px;
+        }
+        .heading6 span{
+            color: #b2744c;
+        }
+        #contact p{
+            font-weight: bold; 
+            font-size: 13px;
+            color: black;
+        }
+        #contact input{ 
+            width: 368px; 
+            border: none;
+            border-bottom: 1px solid l #b2744c;
+        }
+        </style>
+</head>
+<div class="all-content">
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="image/missini_embelsira_2022-1.jpg" style="width:8%;height: 8%;"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jobs">Jobs</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Kerko" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Kerko</button>
+        </form>
+    </div>
+ 
+    </div>
+  </nav>
+  <!--home section-->
+  <section id="home">
+    <div class="content">
+        <h3>Filloje Diten Me nje<br> Coffee dhe<br> Mbaroje Me nje<br> Embelsire</h3>
+
+    </div>
+  </section>
+
+  <!--about section-->
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p id="paragraph1">
+            Missini ofron një gamë të gjerë ëmbëlsirash që frymëzojnë konsumatorët tanë. Missini prodhon ëmbëlsira, konfeksione dhe ushqime me cilësi të lartë, ne ftojmë të tjerët në botën tonë të përbërësve cilësorë, shijeve të shijshme, prezantimeve të bukura dhe përvojave të veçanta kulinare. Missini synon të ofrojë produkte cilësore për klientët tanë dhe qëndrueshmëri në zinxhirin tonë të furnizimit dhe kjo është përparësia jonë kryesore.
+        </p>
+        <br>
+        <b>Vizioni ynë</b> është të jemi ofruesi kryesor i ëmbëlsirave dhe konfeksioneve në rajon, jemi tashmë të njohur për cilësinë tonë të jashtëzakonshme, kreativitetin dhe përkushtimin ndaj kënaqësisë së klientit. Ne synojmë që klientët tanë të ndiejnë shpirtin artizanal, ku njerëzit kujdesen thellësisht për produktet cilësore, ku ata mund të shijojnë një gamë të shijshme produktesh dhe ku ne angazhohemi për qëllimin e arritjes së gjithmonë më të mirës.
+        <br><br>
+        <b>Cilësia:</b> Ne jemi të përkushtuar të prodhojmë ëmbëlsirat dhe konfeksionet më cilësore duke përdorur përbërësit më të mirë dhe duke praktikuar masa të kontrollit të cilësisë.
+        <br><br>
+        <b>Kënaqësia e klientit:</b> Klientët tanë janë gjithçka për ne, ata janë zemra e gjithçkaje që bëjmë. Ne punojmë shumë për të siguruar kënaqësinë e tyre dhe për të tejkaluar pritshmëritë e tyre.
+        <br><br>
+        <b>Inovacioni:</b> Ne vazhdimisht kërkojmë të përmirësojmë produktet tona duke siguruar që të jemi përpara trendeve më të fundit. Ne përqafojmë inovacionin për të përmbushur nevojat në zhvillim të klientëve tanë.
+        <br><br>
+        Gëzim dhe lumturi: Ne synojmë që çdo ëmbëlsirë dhe konfeksion që prodhojmë të sjellë gëzim dhe lumturi në jetën e njerëzve.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="image/facebook.jpg" class="img-fluid" alt="Sample Image" style="width: 1000px; height: 1000px;">
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--Gallary-->
+
+<section id="gallery">
+     <div class="container" id="gallary">
+      <h1>Galeria jone</h1>
+      <div class="row" style="margin-top: 150px;" style="width: 354px;">
+        <div class="col-md-4 py-1 py-md-0">
+            <div class="card">
+                <img src="image/inside.jpg">
+                </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="image/inside2.jpg" style="height: 354px;">
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-4 py-3 py-md-0">
+                            <div class="card">
+                                <img src="image/inside3.jpg">
+                                </div>
+                                </div>
+                                
+        </div>
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="image/inside4.jpg" style=" width: 354px;height: 354px;">
+                    </div>
+                    </div>
+    
+                   
+                            <div class="col-md-4 py-3 py-md-0">
+                                <div class="card">
+                                    <img src="image/inside5.jpg" style="height: 354px; width: 354px;">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 py-3 py-md-0">
+                                        <div class="card">
+                                            <img src="image/inside6.jpg" style="height: 354px; width: 354px;">
+                                            </div>
+                                            </div>
+            </div>
+    </div>
+    </section>
+    <hr>
+    <!--Jobs-->
+    <section>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="mb-4">Login Form</h2>
+            <form class="col-4">
+                <div class="form-group">
+                    <label for="fullName">Emri i plotë</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Shkruani emrin e plotë" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Shkruani email-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Mosha</label>
+                    <input type="number" class="form-control" id="age" placeholder="Shkruani moshën" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gjinia</label>
+                    <select class="form-control" id="gender" required>
+                        <option value="" disabled selected>Zgjidhni gjininë</option>
+                        <option value="male">Mashkull</option>
+                        <option value="female">Femër</option>
+                        <option value="other">Tjetër</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesazhi</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Shkruani mesazhin" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+<hr>
+<!--contact section-->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="heading6"> Contact <span>Us</span></div>
+                <p>Na kontaktoni nëse jeni një kafene, hotel, apo edhe nëse kërkoni të organizoni një ngjarje<br>
+                     korporative ku ne mund t'ju ndihmojmë në ofrimin e përvojave kuptimplota përmes botës së ëmbëlsirave.</p>
+                     <input type="text" class="form-control" placeholder="Emri" aria-label="default input example"><br>
+                     <input type="text" class="form-control" placeholder="Email" aria-label="default input example"><br>
+                     <input type="text" class="form-control" placeholder="Numri" aria-label="default input example"><br>            
+                    <button id="contact-btn">Send Message</button>
+
+                    </div>
+
+                    <div class="col-md-5" id="col">
+                        <h1>Info</h1>
+                        <p><i class="fa-regular fa-envelope"></i>info@missinisweets.com</p>
+                        <p><i class="fa-regular fa-phone"></i>+383 46 88 66 66</p>
+                        <p><i class="fa-regular fa-building-colums"></i>Parku i biznesit
+                            Mitrovica 40000</p>
+                    </div>
+        </div>
+    </div>
+</section>
+
+    </body>
+</html>
